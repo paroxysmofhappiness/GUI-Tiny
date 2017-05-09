@@ -94,9 +94,9 @@ function GT.Cast(name, self, hero, position, manapoint)
 		and  Ability.IsCastable(ability, manapoint)
 		and  Ability.IsReady(ability)
 	then
-		if casttype == 1 then Ability.CastNoTarget(ability, true)
-			elseif casttype == 2 then Ability.CastTarget(ability, hero, true)
-			else Ability.CastPosition(ability, position, true)
+		if casttype == 1 then Ability.CastNoTarget(ability)
+			elseif casttype == 2 then Ability.CastTarget(ability, hero)
+			else Ability.CastPosition(ability, position)
 		end
 	end
 	
